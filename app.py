@@ -5,6 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from rapidfuzz import process
 import requests
 import urllib.parse
+import os
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -72,4 +73,7 @@ def index():
 	return render_template('index.html', recommended_animes=recommended_animes)
 
 if __name__ == '__main__':
-  app.run(debug=True)
+	# The port will be automatically set by Render
+	port = int(os.environ.get("PORT", 5000))
+	
+	app.run(host="0.0.0.0", port=port, debug=True)
