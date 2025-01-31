@@ -1,0 +1,181 @@
+body {
+  color: rgb(71, 71, 71);
+  background-color: #FFF2D7;
+  margin: 0;
+  font-family: Roboto;
+}
+
+.main-heading {
+  font-size: 30px;
+  font-weight: 450;
+  /* background-color: rgba(0, 0, 0, 0.365); */
+  color: black;
+  box-shadow: 0 10px 10px rgba(128, 128, 128, 0.256);
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 700px;
+  height: 40px;
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 0 10px gray;
+  text-indent: 15px;
+}
+
+input::placeholder {
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  height: 45px;
+  width: 50px;
+  margin-left: 10px;
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 0 10px gray;
+  cursor: pointer;
+  position: static;
+  transition: transform 0.25s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button img {
+  width: 32px;
+  vertical-align: middle;
+}
+
+/* .recommendation-engine {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recommendation-engine .heading {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.recommendation-engine .animes {
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.422);
+  border-radius: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 10px;
+  height: 40px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.25s;
+}
+
+.recommendation-engine .animes:hover {
+  transform: scale(1.1)
+} */
+
+
+
+.recommendation-engine {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recommendation-engine .heading {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.anime-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  column-gap: 40px;
+  row-gap: 40px;
+  align-items: center;
+}
+
+.anime-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: #F98866;
+  color: white;
+  box-shadow: 0 0 10px gray;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.25s;
+}
+
+.anime-card:hover {
+  transform: scale(1.1)
+}
+
+.anime-card img {
+  width: 260px;
+  height: 370px;
+  object-fit: fill;
+  filter: brightness(0.8) contrast(1.2) saturate(1.1);
+  border-radius: 10px;
+}
+
+.anime-card .anime-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.anime-card .anime-title {
+  font-weight: 600;
+  font-size: 16px;
+  width: 100%;
+  height: 40px;  /* Adjust height based on your design */
+  overflow: hidden;
+  text-align: center;
+  line-height: 1.2; /* Adjust for better readability */
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}

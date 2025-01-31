@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Recommendation Engine</title>
+
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+  <div class="main">
+    <p class="main-heading">Anime Recommendation Engine</p>
+
+    <div class="input">
+      <form method="POST">
+        <input type="text" id="anime_name" name="anime_name" placeholder="Enter your favourite Anime Name" required>
+        <button type="submit">
+          <img src="../static/images/search.svg">
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="recommendation-engine">
+    {% if recommended_animes %}
+    <p class="heading">Animes Suggested for You:</p>
+    <div class="anime-container">
+      {% for anime in recommended_animes %}
+      <div class="anime-card">
+        <img src="{{ anime.poster }}" alt="{{ anime.title }} Poster" class="anime-poster">
+        <div class="anime-info">
+          <p class="anime-title">Title: {{ anime.title }}</p>
+          <p class="anime-genre">Genre: {{ anime.genre }}</p>
+          <p class="anime-rating">IMDb: {{ anime.rating }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</body>
+
+</html>
