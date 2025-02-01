@@ -1,3 +1,3 @@
 # Anime-Recommendation-Engine
 
-Click this link - anime-recommendation-engine-production.up.railway.app
+Click this link - https://anime-recommendation-engine-production.up.railway.app/
