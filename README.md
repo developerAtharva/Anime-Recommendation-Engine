@@ -1,6 +1,6 @@
 # Anime Recommendation Engine
 
-🚀 **Anime Recommendation Engine** is a web application that helps users find anime based on their preferences. The model utilizes collaborative filtering and content-based filtering techniques to suggest anime tailored to user interests.
+🚀 **Anime Recommendation Engine** is a web application that helps users find anime based on their preferences. The model utilizes content-based filtering techniques to suggest anime tailored to user interests.
 
 🔗 **Live Demo:** [Anime Recommendation Engine](https://anime-recommendation-engine-production.up.railway.app/)
 
